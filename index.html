@@ -1,0 +1,60 @@
+<!DOCTYPE html/>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="shortcut icon" href="./src/assets/img/adeafip.ico" type="image/x-icon"/>
+    <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit&hl=es" async defer></script>
+    <script type="text/javascript">
+      var RecaptchaOptions = {
+              lang : 'es', // Unavailable while writing this code (just for audio challenge)
+              theme : 'red' // Make sure there is no trailing ',' at the end of the RecaptchaOptions dictionary
+      };
+    </script> 
+    <script type="text/javascript">
+        history.pushState(null, null, location.href);
+        function noBack() {
+          history.pushState(null, null, location.href);
+          window.addEventListener('popstate', function () {
+              history.pushState(null, null, location.href);
+          });
+        }
+    </script> 
+    <script  src = "https://unpkg.com/vue-recaptcha@latest/dist/vue-recaptcha.min.js "></script> 
+    <!-- Meta para los Buscadores -->
+    <title>CETA - Certificado de transferencia del automotor - AFIP</title>
+    <meta name="description" content="Este certificado es el que deberán solicitar las personas físicas, las sucesiones indivisas y personas jurídicas, del país o residentes en el exterior, para la  transferencia de automotores."/>
+    <meta name="keywords" content="AFIP, CETA, Automotor, transferencia, venta"/>
+    <meta name="author" content="AFIP"/>
+    <meta name="robots" content="Index, Follow"/> <!-- opciones: Index, Follow - NoIndex, Follow - Index, NoFollow - NoIndex, NoFollow -->
+    
+    <!-- Icono favorito -->
+    <link rel="icon" href="/frameworkAFIP/v1/img/favicon.ico"/>
+    
+    
+    <!-- Bara de direccion y navegacion -->
+    <meta name="theme-color" content="#0072b8"/>
+    <meta name="msapplication-navbutton-color" content="#0072b8"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0072b8"/>
+    
+    <!-- Facebook , google + -->
+    <meta property="og:title" content="CETA - Certificado de transferencia del automotor - AFIP"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:description" content="Este certificado es el que deberán solicitar las personas físicas, las sucesiones indivisas y personas jurídicas, del país o residentes en el exterior, para la  transferencia de automotores."/>
+    <meta property="og:image" content="/frameworkAFIP/v1/img/thumbnail.jpg"/>
+    <meta property="og:locale" content="es_AR"/>
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="CETA - Certificado de transferencia del automotor - AFIP"/>
+    <meta name="twitter:description" content="Este certificado es el que deberán solicitar las personas físicas, las sucesiones indivisas y personas jurídicas, del país o residentes en el exterior, para la  transferencia de automotores."/>
+    <meta name="twitter:image" content="/frameworkAFIP/v1/img/thumbnail.jpg"/>
+    
+  </head>
+  <body class="sticky-header" id="simple" onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+    <div id="app"></div> 
+  </body>
+</html>
+
