@@ -19,7 +19,7 @@
     "bootstrap-vue": "^2.0.0-rc.27",
     "es6-promise": "^4.2.4",
     "ip": "^1.1.5",
-    "node-fetch": "^2.2.0",
+    "node-fetch": "^2.6.7",
     "quick-local-ip": "^1.0.7",
     "recaptcha": "^1.2.1",
     "request": "^2.88.0",
